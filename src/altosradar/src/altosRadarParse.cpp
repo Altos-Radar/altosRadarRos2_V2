@@ -233,7 +233,7 @@ int main(int argc, char** argv) {
                          histBuf, pointNumPerPack);
                 pcl::toROSMsg(*cloud, output);
                 output.header.frame_id = "altosRadar";
-                printf("0 pointNum of %d frame: %d\n",
+                printf("The number of points in frame %d: %d\n",
                        pointCloudBuf.pckHeader.frameId,
                        cntPointCloud[0] + cntPointCloud[1]);
                 output.header.stamp = node->get_clock()->now();
